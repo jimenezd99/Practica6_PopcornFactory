@@ -6,38 +6,38 @@
     android:orientation="vertical"
     android:background="@color/fondo_Inicio"
     android:layout_height="match_parent"
-    tools:context=".Inicio">
+    android:layout_weight="2"
+    tools:context=".Menu">
 
 
         <ImageView
             android:id="@+id/iv_imagen"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1"
+            android:layout_weight="2"
             android:src="@drawable/popcorn"
+            android:scaleY="2.5"
             />
         <TextView
             android:id="@+id/tv_texto"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight=".2"
+            android:layout_weight=".19"
             android:text="@string/start"
             android:textColor="@color/letra_inicio"
             android:textSize="15sp"
-            android:layout_marginHorizontal="35dp"
+            android:paddingHorizontal="35dp"
             android:fontFamily="sans-serif-condensed"
             />
 
-    <Button
-        android:id="@+id/btn_start"
-        android:layout_width="237dp"
-        android:layout_height="39dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="15dp"
-        android:layout_marginBottom="80dp"
-        android:text="@string/button"
-        android:textColor="@color/black"
-        android:background="@drawable/round_button"
-        />
+        <Button
+            android:id="@+id/btn_start"
+            android:layout_width="237dp"
+            android:layout_height="39dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="80dp"
+            android:background="@drawable/round_button"
+            android:text="@string/button" />
 
 </LinearLayout>

@@ -13,39 +13,58 @@
         android:layout_height="0dp"
         android:layout_weight="2"
         android:orientation="vertical">
+
         <ImageView
             android:id="@+id/iv_pelicula_imagen"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:src="@drawable/bonesheader"
-            />
-        <TextView
-            android:id="@+id/tv_pelicula_titulo"
+            android:scaleY="1.3"
+            android:src="@drawable/bonesheader" />
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="15dp"
             android:layout_weight=".2"
-            android:gravity="left"
-            android:text="BONES"
-            android:textColor="@color/boton_Inicio"
-            android:layout_margin="10dp"
-            android:textSize="25sp"
-            android:fontFamily="sans-serif-condensed"
-            android:textStyle="bold"
-            />
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_pelicula_titulo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight=".5"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="left"
+                android:text="BONES"
+                android:textColor="@color/boton_Inicio"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center_horizontal|center"
+                android:layout_weight=".6"
+                android:background="?android:attr/listDivider"
+                android:foreground="@color/boton_Inicio" />
+        </LinearLayout>
+
 
         <TextView
             android:id="@+id/tv_pelicula_desc"
             android:layout_width="match_parent"
             android:layout_height="0dp"
+            android:layout_margin="10dp"
             android:layout_weight="1"
+            android:fontFamily="sans-serif-light"
             android:gravity="fill_horizontal"
             android:text="When a devastating event befalls the city of San Fransokyo"
-            android:textSize="14sp"
             android:textColor="@color/letra_inicio"
-            android:layout_margin="10dp"
-            android:fontFamily="sans-serif-light"
-            />
+            android:textSize="14sp" />
     </LinearLayout>
 
 </LinearLayout>

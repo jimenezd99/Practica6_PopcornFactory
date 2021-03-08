@@ -2,5 +2,7 @@
     <string name="app_name">Popcorn Factory</string>
     <string name="start">Welcome to Popconrn Factory, home of the best series and movies. Just lay down, make some popcorn and enjoy!</string>
     <string name="button">GET ME IN!</string>
+    <string name="series">SERIES</string>
+    <string name="movies">MOVIES</string>
 
 </resources>
