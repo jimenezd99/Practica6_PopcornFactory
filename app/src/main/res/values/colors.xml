@@ -7,7 +7,8 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="fondo_Inicio">#1D1D1D</color>
-    <color name="boton_Inicio">#FFD501</color>
-    <color name="letra_inicio">#C5C5C5</color>
+    <color name="fondo">#1D1D1D</color>
+    <color name="boton">#FFD501</color>
+    <color name="letras">#C5C5C5</color>
+    <color name="grisClaro">#9E9E9E</color>
 </resources>

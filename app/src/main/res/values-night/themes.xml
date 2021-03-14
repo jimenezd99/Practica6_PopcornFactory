@@ -2,13 +2,13 @@
     <!-- Base application theme. -->
     <style name="Theme.Practica6_PopcornFactory" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/fondo_Inicio</item>
-        <item name="colorPrimaryVariant">@color/letra_inicio</item>
-        <item name="colorOnPrimary">@color/boton_Inicio</item>
+        <item name="colorPrimary">@color/fondo</item>
+        <item name="colorPrimaryVariant">@color/letras</item>
+        <item name="colorOnPrimary">@color/boton</item>
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/fondo_Inicio</item>
-        <item name="colorSecondaryVariant">@color/letra_inicio</item>
-        <item name="colorOnSecondary">@color/boton_Inicio</item>
+        <item name="colorSecondary">@color/fondo</item>
+        <item name="colorSecondaryVariant">@color/letras</item>
+        <item name="colorOnSecondary">@color/boton</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->

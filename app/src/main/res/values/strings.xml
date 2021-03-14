@@ -4,5 +4,7 @@
     <string name="button">GET ME IN!</string>
     <string name="series">SERIES</string>
     <string name="movies">MOVIES</string>
+    <string name="button_ticket">buy me Ticket!</string>
+    <string name="availible">Availible</string>
 
 </resources>

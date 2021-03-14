@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:padding="3dp"
-    android:background="@color/fondo_Inicio"
+    android:background="@color/fondo"
     android:layout_height="match_parent">
 
     <LinearLayout
@@ -26,7 +26,7 @@
             android:layout_marginTop="9dp"
             android:text="BONES"
             android:textSize="15sp"
-            android:textColor="@color/boton_Inicio"
+            android:textColor="@color/boton"
             android:fontFamily="sans-serif-light"
             />
     </LinearLayout>

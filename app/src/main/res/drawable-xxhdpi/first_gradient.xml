@@ -2,8 +2,8 @@
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
     <gradient android:type="linear"
         android:angle="270"
-        android:startColor="@color/boton_Inicio"
-        android:endColor="@color/letra_inicio"
+        android:startColor="@color/boton"
+        android:endColor="@color/letras"
         />
 
 </shape>
