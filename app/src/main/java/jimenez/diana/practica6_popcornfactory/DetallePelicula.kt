@@ -16,6 +16,7 @@ class DetallePelicula : AppCompatActivity() {
         var title=""
 
         if(bundle!=null){
+            ns=bundle.getInt("numberSeats")
             title=bundle.getString("titulo")!!
             iv_pelicula_imagen.setImageResource(bundle.getInt("header"))
             tv_pelicula_titulo.setText(bundle.getString("titulo"))
@@ -28,10 +29,12 @@ class DetallePelicula : AppCompatActivity() {
             buyTicket.isEnabled=false
         }else{
             buyTicket.setOnClickListener {
+                buyTicket.isEnabled=true
                 val intent: Intent = Intent(this, SeatSelection::class.java)
 
                 intent.putExtra("id",id)
                 intent.putExtra("name", title)
+                this.startActivity(intent)
             }
         }
 

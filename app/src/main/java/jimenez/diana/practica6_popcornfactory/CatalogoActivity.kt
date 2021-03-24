@@ -8,22 +8,21 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
-import android.widget.Button
-import kotlinx.android.synthetic.main.activity_catalog.*
+import kotlinx.android.synthetic.main.activity_catalogo.*
 import kotlinx.android.synthetic.main.pelicula.view.*
 
-class CatalogActivity : AppCompatActivity() {
+class CatalogoActivity : AppCompatActivity() {
     var adapter: PeliculaAdapter?=null
     var peliculas = ArrayList<Pelicula>()
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_catalog)
+        setContentView(R.layout.activity_catalogo)
 
         cargarPeliculas()
 
         adapter= PeliculaAdapter(this,peliculas)
         gv_peliculas.adapter=adapter
+
     }
 
     private fun cargarPeliculas() {
@@ -38,7 +37,10 @@ class CatalogActivity : AppCompatActivity() {
         peliculas.add(Pelicula("Men in black",R.drawable.mib, R.drawable.mibheader, "After a government agency makes first contact with aliens in 1961, alien refugees live in secret on Earth by disguising themselves as humans. Men in Black (MIB) is a secret agency that polices these aliens, protects Earth from extraterrestrial threats, and uses memory-erasing neuralyzers to keep alien activity a secret. MIB agents have their former identities erased while retired agents are neuralyzed. ",arrayListOf<Cliente>()))
         peliculas.add(Pelicula("Harry Potter",R.drawable.harrypotter, R.drawable.harrypotterheader, "Late one night, Albus Dumbledore and Minerva McGonagall, professors at Hogwarts School of Witchcraft and Wizardry, along with the school's groundskeeper Rubeus Hagrid, deliver a recently orphaned infant named Harry Potter to his only remaining relatives, the Dursleys. Ten years later, Harry has lived a difficult life with the Dursleys. After inadvertently causing an accident during a family trip to London Zoo, Harry begins receiving unsolicited letters by owls. After he and the Dursleys escape to an island to avoid more letters, Hagrid re-appears and informs Harry that he is a wizard and has been accepted into Hogwarts against the Dursleys' wishes. After taking Harry to Diagon Alley to buy his supplies for Hogwarts and a pet owl named Hedwig as a birthday present, Hagrid informs him of his past: Harry's parents James and Lily Potter died due to a Killing Curse at the hands of the malevolent and all-powerful wizard: Lord Voldemort. Harry, the only survivor in the chaos, thus becomes well-known in the wizarding world as 'The Boy Who Lived'.",arrayListOf<Cliente>()))
     }
+
+
 }
+
 class PeliculaAdapter: BaseAdapter {
     var peliculas= ArrayList<Pelicula>()
     var contexto: Context?=null
@@ -77,11 +79,12 @@ class PeliculaAdapter: BaseAdapter {
 
         vista.iv_imagen.setOnClickListener(){
             var intent= Intent(contexto,DetallePelicula::class.java)
+            var seatsAv=20-pelicula.seats.size
             intent.putExtra("titulo", pelicula.titulo)
             intent.putExtra("image", pelicula.image)
             intent.putExtra("header", pelicula.header)
             intent.putExtra("sipnosis", pelicula.sipnosis)
-            intent.putExtra("numberSeats",(20-pelicula.seats.size))
+            intent.putExtra("numberSeats",(seatsAv))
             intent.putExtra("pos", position)
             contexto!!.startActivity(intent)
         }

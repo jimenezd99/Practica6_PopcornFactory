@@ -7,7 +7,7 @@
     android:background="@color/fondo"
     android:layout_height="match_parent"
     android:layout_weight="2"
-    tools:context=".Menu">
+    tools:context=".MainActivity">
 
 
         <ImageView
